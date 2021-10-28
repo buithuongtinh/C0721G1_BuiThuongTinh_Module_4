@@ -1,46 +1,43 @@
 package vn.codegym.model;
 
 public class Email {
-    private String language;
-
-    private int pageSize;
-
-    private boolean spamFilter;
-
+    private String[] language;
+    private int[] size;
+    private boolean spamFillter;
     private String signature;
 
     public Email() {
     }
 
-    public Email(String language, int pageSize, boolean spamFilter, String signature) {
+    public Email(String[] language, int[] size, boolean spamFillter, String signature) {
         this.language = language;
-        this.pageSize = pageSize;
-        this.spamFilter = spamFilter;
+        this.size = size;
+        this.spamFillter = spamFillter;
         this.signature = signature;
     }
 
-    public String getLanguage() {
+    public String[] getLanguage() {
         return language;
     }
 
-    public void setLanguage(String language) {
+    public void setLanguage(String[] language) {
         this.language = language;
     }
 
-    public int getPageSize() {
-        return pageSize;
+    public int[] getSize() {
+        return size;
     }
 
-    public void setPageSize(int pageSize) {
-        this.pageSize = pageSize;
+    public void setSize(int[] size) {
+        this.size = size;
     }
 
-    public boolean isSpamFilter() {
-        return spamFilter;
+    public boolean isSpamFillter() {
+        return spamFillter;
     }
 
-    public void setSpamFilter(boolean spamFilter) {
-        this.spamFilter = spamFilter;
+    public void setSpamFillter(boolean spamFillter) {
+        this.spamFillter = spamFillter;
     }
 
     public String getSignature() {

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <div th:insert="~{header::header1}">
+        <h2>head</h2>
+    </div>
+</head>
+<body>
+<h1>Student list</h1>
+<strong style="color: green" th:if="${successMg}" th:text="${successMg}"></strong>
+
+<a th:href="@{/student/create}">Add new Student</a>
+<table class="table" border="1">
+    <thead>
+    <tr>
+        <th>STT</th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Language</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="student,item:${studentList}">
+        <td th:text="${item.count}"></td>
+        <td th:text="${student.id}"></td>
+        <td th:text="${student.name}"></td>
+        <td th:switch="${student.gender}">
+            <span th:case="1" th:text="Male"></span>
+            <span th:case="0" th:text="Female"></span>
+            <span th:case="*" th:text="LGBT"></span>
+        </td>
+        <td>
+            <span th:each="lang: ${student.languages}" th:text="${lang}+','"></span>
+        </td>
+        <td>
+            <a th:href="@{/student/delete/{id}(id=${student.id})}">Delete1</a>
+            <a th:href="@{/student/delete(id=${student.id})}">Delete2</a>
+        </td>
+    </tr>
+    </c:forEach>
+    </tbody>
+</table>
+
+</body>
+</html>

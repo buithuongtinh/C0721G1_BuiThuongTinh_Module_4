@@ -11,12 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-<div>Language: ${email.language}</div>
-<div>Page size: ${email.pageSize}</div>
-<div>Spam Filter: ${email.spamFilter}</div>
-<div>Signature: ${email.signature}</div>
-<a href="/edit">
-    <button>Edit</button>
-</a>
+
 </body>
 </html>

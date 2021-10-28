@@ -7,28 +7,41 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.servlet.ModelAndView;
+
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import vn.codegym.model.Email;
-import vn.codegym.service.EmailServiceImpl;
-import vn.codegym.service.IEmailService;
+
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 public class EmailController {
 
 
-    @Autowired
-    private IEmailService emailService;
-
-    @GetMapping("/")
-    public String display(Model model){
-        Email email = new Email();
-        model.addAttribute("email",new Email());
-        return "edit-form";
+    @GetMapping()
+    public String showUpdateMail(Model model) {
+        List<String> languegeList = new ArrayList<>();
+        languegeList.add("English");
+        languegeList.add("Vietnamese");
+        languegeList.add("Japanese");
+        languegeList.add("Chinese");
+        List<Integer> sizeList = new ArrayList<>();
+        sizeList.add(5);
+        sizeList.add(10);
+        sizeList.add(15);
+        sizeList.add(25);
+        sizeList.add(50);
+        sizeList.add(100);
+       Email email = new Email();
+        model.addAttribute("email", email);
+        model.addAttribute("languageList", languegeList);
+        model.addAttribute("sizeList", sizeList);
+        return "update";
     }
-
-    @PostMapping("/save")
-    public ModelAndView save(@ModelAttribute("email") Email email){
-        emailService.saveEmail(email);
-        return new ModelAndView("display","email",email);
+    @PostMapping("/update")
+    public String updateMail(@ModelAttribute Email email, RedirectAttributes redirectAttributes) {
+        redirectAttributes.addFlashAttribute("message", "Edit success");
+        return "redirect:/update";
     }
 }
