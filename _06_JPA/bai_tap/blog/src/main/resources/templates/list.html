@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<a th:href="@{/create}">Add Blog</a>
+<table border="1px">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>header</th>
+        <th>content</th>
+        <th>footer</th>
+        <th colspan="2">Action</th>
+    </tr>
+
+    <th:block th:each="obj:${listAll}">
+        <tr >
+            <td th:text="${obj.id}"></td>
+            <td th:text="${obj.name}"></td>
+            <td th:text="${obj.header}"></td>
+            <td th:text="${obj.content}"></td>
+            <td th:text="${obj.footer}"></td>
+            <td><a th:href="@{/delete/{id}(id=${obj.id})}">Delete</a></td>
+            <td><a th:href="@{/edit/{id}(id=${obj.id})}">edit</a></td>
+            <td><a th:href="@{/detail/{id}(id = ${obj.id})}">Xem chi tiet</a> </td>
+        </tr>
+    </th:block>
+
+</table>
+</body>
+</html>
