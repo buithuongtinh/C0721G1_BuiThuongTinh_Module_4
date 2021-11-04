@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin: 0 auto;
+        text-align: center;
+    }
+    header{
+
+        color: blue;
+    }
+    .content{
+        color: green;
+    }
+    footer{
+        text-align: center;
+
+    }
+
+</style>
+<body>
+<a th:href="@{/list}">List Blog</a>
+<div th:object="${blog}">
+    <header th:text="*{header}"></header>
+    <div class="content">
+        <p th:text="*{content}"></p>
+    </div>
+    <footer>
+        <p th:text="*{footer}"></p>
+    </footer>
+</div>
+</body>
+</html>
