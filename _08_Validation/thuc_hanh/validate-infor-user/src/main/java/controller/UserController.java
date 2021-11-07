@@ -1,6 +1,6 @@
 package controller;
 
-import model.User;
+import model.entity.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;

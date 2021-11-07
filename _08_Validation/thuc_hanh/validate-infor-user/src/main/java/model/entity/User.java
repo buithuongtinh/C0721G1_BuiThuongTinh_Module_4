@@ -1,4 +1,4 @@
-package model;
+package model.entity;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
