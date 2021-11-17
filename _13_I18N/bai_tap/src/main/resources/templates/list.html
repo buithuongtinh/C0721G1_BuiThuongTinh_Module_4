@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1px">
+    <tr>
+        <th th:text="#{message.id}"></th>
+        <th th:text="#{message.name}"></th>
+        <th th:text="#{message.address}"></th>
+    </tr>
+    <tr th:each="obj:${listAll}">
+        <th th:text="${obj.id}"></th>
+        <th th:text="${obj.name}"></th>
+        <th th:text="${obj.address}"></th>
+    </tr>
+</table>
+</body>
+</html>
