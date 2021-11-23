@@ -4,7 +4,7 @@ package com.codegym.thuc_hanh_2.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name="smartphones")
+@Table(name = "smartphones")
 public class Smartphone {
 
     @Id
@@ -58,6 +58,6 @@ public class Smartphone {
 
     @Override
     public String toString() {
-        return producer+": "+model+" with price "+price;
+        return producer + ": " + model + " with price " + price;
     }
 }

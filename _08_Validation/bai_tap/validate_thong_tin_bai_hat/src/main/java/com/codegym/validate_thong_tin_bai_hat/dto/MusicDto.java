@@ -4,7 +4,6 @@ import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
 
-
 public class MusicDto implements Validator {
     private int id;
     private String nameSong;
@@ -50,15 +49,15 @@ public class MusicDto implements Validator {
 
     @Override
     public void validate(Object target, Errors errors) {
-        MusicDto musicDto =(MusicDto) target;
-        if (musicDto.getNameSong().equals("")|| musicDto.getNameSong().length()>800){
-            errors.rejectValue("nameSong","song.validate.nameSong","Không được để trống, dưới 800 ký tự, ko chứa ký tự đặc biệt");
+        MusicDto musicDto = (MusicDto) target;
+        if (musicDto.getNameSong().equals("") || musicDto.getNameSong().length() > 800) {
+            errors.rejectValue("nameSong", "song.validate.nameSong", "Không được để trống, dưới 800 ký tự, ko chứa ký tự đặc biệt");
         }
-        if (musicDto.getNameWriteSong().equals("")||musicDto.getNameSong().length()>300){
-            errors.rejectValue("nameWriteSong", "song.validate.nameWriteSong","Không được để trống, dưới 800 ký tự, ko chứa ký tự đặc biệt");
+        if (musicDto.getNameWriteSong().equals("") || musicDto.getNameSong().length() > 300) {
+            errors.rejectValue("nameWriteSong", "song.validate.nameWriteSong", "Không được để trống, dưới 800 ký tự, ko chứa ký tự đặc biệt");
         }
-        if (musicDto.getTypeSong().equals("") || musicDto.getTypeSong().length() >300){
-            errors.rejectValue("typeSong", "song.validate.typeSong","Không được để trống, dưới 800 ký tự, ko chứa ký tự đặc biệt");
+        if (musicDto.getTypeSong().equals("") || musicDto.getTypeSong().length() > 300) {
+            errors.rejectValue("typeSong", "song.validate.typeSong", "Không được để trống, dưới 800 ký tự, ko chứa ký tự đặc biệt");
         }
 
     }

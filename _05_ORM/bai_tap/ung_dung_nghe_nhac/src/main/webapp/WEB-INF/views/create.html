@@ -12,7 +12,7 @@
     </a>
 </button>
 <div id="form">
-    <form th:action="@{/product/save}" th:object="${product}" method="post" >
+    <form th:action="@{/product/save}" th:object="${product}" method="post">
         <div>
             <label>Name Product:</label>
             <input type="text" th:field="*{name}"/>

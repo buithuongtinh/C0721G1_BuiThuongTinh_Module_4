@@ -14,7 +14,7 @@ import java.util.List;
 
 @Component
 //@Primary
-public class StudentServiceImpl implements IStudentService{
+public class StudentServiceImpl implements IStudentService {
 
     @Autowired
     private IStudentRepository studentRepository;

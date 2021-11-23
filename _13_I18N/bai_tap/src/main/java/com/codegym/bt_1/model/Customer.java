@@ -11,7 +11,8 @@ public class Customer {
     private String name;
     private String address;
 
-    public Customer(){}
+    public Customer() {
+    }
 
     public Customer(long id, String name, String address) {
         this.id = id;

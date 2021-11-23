@@ -38,17 +38,18 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
                 .authorizeRequests().antMatchers("/home").permitAll()//
 
-                .antMatchers("/blog").hasAnyRole("USER","ADMIN")
+                .antMatchers("/blog").hasAnyRole("USER", "ADMIN")
                 .antMatchers("/blog/**").hasRole("ADMIN")
 
                 /* all request guu len server deu pai sac thuc */
                 .anyRequest().authenticated();
 
-        http.authorizeRequests().and().rememberMe().tokenRepository(this.persistentTokenRepository()).tokenValiditySeconds(60*60*5);
+        http.authorizeRequests().and().rememberMe().tokenRepository(this.persistentTokenRepository()).tokenValiditySeconds(60 * 60 * 5);
 
     }
+
     @Bean
-    public PersistentTokenRepository persistentTokenRepository(){
+    public PersistentTokenRepository persistentTokenRepository() {
         InMemoryTokenRepositoryImpl inMemoryTokenRepository = new InMemoryTokenRepositoryImpl();
         return inMemoryTokenRepository;
     }

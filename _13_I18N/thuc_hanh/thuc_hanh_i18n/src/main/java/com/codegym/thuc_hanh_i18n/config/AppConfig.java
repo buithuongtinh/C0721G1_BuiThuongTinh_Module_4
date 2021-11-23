@@ -20,7 +20,7 @@ import java.util.Locale;
 public class AppConfig implements WebMvcConfigurer {
 
     @Bean
-    public LocaleResolver localeResolver (){
+    public LocaleResolver localeResolver() {
         SessionLocaleResolver localeResolver = new SessionLocaleResolver();
         localeResolver.setDefaultLocale(new Locale("en"));
         return localeResolver;
@@ -32,14 +32,14 @@ public class AppConfig implements WebMvcConfigurer {
     }
 
     @Bean
-    public LocaleChangeInterceptor localeChangeInterceptor (){
+    public LocaleChangeInterceptor localeChangeInterceptor() {
         LocaleChangeInterceptor interceptor = new LocaleChangeInterceptor();
         interceptor.setParamName("lang");
         return interceptor;
     }
 
     @Bean
-    public MessageSource messageSource(){
+    public MessageSource messageSource() {
         ResourceBundleMessageSource bundleMessageSource = new ResourceBundleMessageSource();
         bundleMessageSource.setBasename("message/mgs");
         bundleMessageSource.setDefaultEncoding("UTF-8");

@@ -7,7 +7,8 @@
         form {
             width: 40%;
         }
-        div>div{
+
+        div > div {
             color: red;
         }
     </style>
@@ -27,12 +28,12 @@
         <div class="form-group">
             <!--            first name-->
             <label for="name">First Name</label>
-            <input th:field="*{firstName}" id="name" class="form-control" />
+            <input th:field="*{firstName}" id="name" class="form-control"/>
             <div th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></div>
 
             <!--            Last name-->
             <label for="lastName">Last Name</label>
-            <input id="lastName" th:field="*{lastName}" class="form-control" />
+            <input id="lastName" th:field="*{lastName}" class="form-control"/>
             <div th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></div>
 
             <!--            Phone number-->

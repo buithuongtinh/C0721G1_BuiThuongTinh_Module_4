@@ -29,45 +29,45 @@ public class ProductController {
     @PostMapping("/save")
     public String saveProduct(Product product, RedirectAttributes redirectAttributes) {
         productService.save(product);
-        redirectAttributes.addFlashAttribute("success","Success");
+        redirectAttributes.addFlashAttribute("success", "Success");
         return "redirect:/product";
     }
 
     @GetMapping("/{id}/edit")
-    public String showEdit(@PathVariable int id,Model model){
-        model.addAttribute("product",productService.findById(id));
+    public String showEdit(@PathVariable int id, Model model) {
+        model.addAttribute("product", productService.findById(id));
         return "/edit";
     }
 
     @PostMapping("/update")
-    public String update(Product product,RedirectAttributes redirectAttributes){
+    public String update(Product product, RedirectAttributes redirectAttributes) {
         productService.save(product);
-        redirectAttributes.addAttribute("success","Edit success!!");
+        redirectAttributes.addAttribute("success", "Edit success!!");
         return "redirect:/product";
     }
 
     @GetMapping("/{id}/delete")
-    public String showDelete(@PathVariable int id,Model model){
-        model.addAttribute("product",productService.findById(id));
+    public String showDelete(@PathVariable int id, Model model) {
+        model.addAttribute("product", productService.findById(id));
         return "/delete";
     }
 
     @PostMapping("/remove")
-    public String remove(Product product, RedirectAttributes redirectAttributes){
+    public String remove(Product product, RedirectAttributes redirectAttributes) {
         productService.remove(product);
-        redirectAttributes.addFlashAttribute("success","Delete success!");
+        redirectAttributes.addFlashAttribute("success", "Delete success!");
         return "redirect:/product";
     }
 
     @GetMapping("/{id}/view")
-    public String view(@PathVariable int id, Model model){
-        model.addAttribute("product",productService.findById(id));
+    public String view(@PathVariable int id, Model model) {
+        model.addAttribute("product", productService.findById(id));
         return "/view";
     }
 
     @PostMapping("/search")
-    public String search(@RequestParam String search,Model model){
-        model.addAttribute("product",productService.findByName(search));
+    public String search(@RequestParam String search, Model model) {
+        model.addAttribute("product", productService.findByName(search));
         return "/view";
     }
 }

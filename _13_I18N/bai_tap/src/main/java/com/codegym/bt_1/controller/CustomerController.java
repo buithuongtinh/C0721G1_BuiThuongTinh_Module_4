@@ -12,9 +12,9 @@ public class CustomerController {
     private ICustomerService iCustomerService;
 
     @GetMapping()
-    public ModelAndView findAll(){
+    public ModelAndView findAll() {
         ModelAndView modelAndView = new ModelAndView("list");
-        modelAndView.addObject("listAll",this.iCustomerService.findAll());
+        modelAndView.addObject("listAll", this.iCustomerService.findAll());
         return modelAndView;
     }
 }

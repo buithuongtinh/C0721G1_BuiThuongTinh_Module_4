@@ -26,14 +26,14 @@ public class StudentController {
     private IStudentService studentService;
 
     @GetMapping("/list")
-    public ModelAndView showList(){
+    public ModelAndView showList() {
         return new ModelAndView("/student/list",
                 "studentList",
                 studentService.findAll());
     }
 
     @GetMapping("/create")
-    public String showCreatePage(Model model){
+    public String showCreatePage(Model model) {
 
         List<String> languageList = new ArrayList<>();
         languageList.add("C#");
@@ -48,7 +48,7 @@ public class StudentController {
 
     @PostMapping("/create")
     public String createStudent(@ModelAttribute Student student,
-                                RedirectAttributes redirectAttributes){
+                                RedirectAttributes redirectAttributes) {
         studentService.save(student);
         redirectAttributes.addFlashAttribute("successMg",
                 "");

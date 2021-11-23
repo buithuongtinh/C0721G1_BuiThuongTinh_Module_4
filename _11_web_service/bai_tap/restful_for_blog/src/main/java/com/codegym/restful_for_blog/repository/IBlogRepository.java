@@ -7,8 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 
-
 @Repository
-public interface IBlogRepository extends JpaRepository<Blog,Integer> {
+public interface IBlogRepository extends JpaRepository<Blog, Integer> {
     List<Blog> findAllByCategory_NameCategory(String nameCategory);
 }

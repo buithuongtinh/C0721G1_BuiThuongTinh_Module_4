@@ -12,42 +12,42 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>Create Student</h1>
-    <form:form modelAttribute="student" action="/student/create" method="post">
-        <table>
-            <tr>
-                <th>Id:</th>
-                <td>
-                    <form:input path="id" />
-                </td>
-            </tr>
-            <tr>
-                <th>Name:</th>
-                <td>
-                    <form:input path="name" />
-                </td>
-            </tr>
-            <tr>
-                <th>Gender:</th>
-                <td>
-                    <form:radiobutton path="gender" value="1" label="Male"/>
-                    <form:radiobutton path="gender" value="0" label="FeMale"/>
-                    <form:radiobutton path="gender" value="2" label="LGBT"/>
-                </td>
-            </tr>
-            <tr>
-                <th>Languages:</th>
-                <td>
-                    <form:checkboxes path="languages" items="${languageList}" />
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <button type="submit">Create</button>
-                </td>
-            </tr>
-        </table>
+<h1>Create Student</h1>
+<form:form modelAttribute="student" action="/student/create" method="post">
+    <table>
+        <tr>
+            <th>Id:</th>
+            <td>
+                <form:input path="id"/>
+            </td>
+        </tr>
+        <tr>
+            <th>Name:</th>
+            <td>
+                <form:input path="name"/>
+            </td>
+        </tr>
+        <tr>
+            <th>Gender:</th>
+            <td>
+                <form:radiobutton path="gender" value="1" label="Male"/>
+                <form:radiobutton path="gender" value="0" label="FeMale"/>
+                <form:radiobutton path="gender" value="2" label="LGBT"/>
+            </td>
+        </tr>
+        <tr>
+            <th>Languages:</th>
+            <td>
+                <form:checkboxes path="languages" items="${languageList}"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="submit">Create</button>
+            </td>
+        </tr>
+    </table>
 
-    </form:form>
+</form:form>
 </body>
 </html>

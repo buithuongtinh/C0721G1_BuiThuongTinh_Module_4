@@ -8,8 +8,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 
 @Repository
-public interface CodeBookRepository extends JpaRepository<CodeBook,Integer> {
+public interface CodeBookRepository extends JpaRepository<CodeBook, Integer> {
     CodeBook findByNumberBook(int numberBook);
+
     @Transactional
     void removeCodeBookByNumberBook(int numberBook);
 }

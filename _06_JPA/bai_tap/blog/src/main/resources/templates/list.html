@@ -18,7 +18,7 @@
     </tr>
 
     <th:block th:each="obj:${listAll}">
-        <tr >
+        <tr>
             <td th:text="${obj.id}"></td>
             <td th:text="${obj.name}"></td>
             <td th:text="${obj.header}"></td>
@@ -26,7 +26,7 @@
             <td th:text="${obj.footer}"></td>
             <td><a th:href="@{/delete/{id}(id=${obj.id})}">Delete</a></td>
             <td><a th:href="@{/edit/{id}(id=${obj.id})}">edit</a></td>
-            <td><a th:href="@{/detail/{id}(id = ${obj.id})}">Xem chi tiet</a> </td>
+            <td><a th:href="@{/detail/{id}(id = ${obj.id})}">Xem chi tiet</a></td>
         </tr>
     </th:block>
 

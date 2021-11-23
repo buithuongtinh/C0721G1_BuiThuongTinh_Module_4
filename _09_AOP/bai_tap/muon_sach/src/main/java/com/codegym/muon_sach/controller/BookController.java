@@ -19,18 +19,18 @@ public class BookController {
     CodeBookService codeBookService;
 
     @GetMapping("/list")
-    public ModelAndView showList(){
+    public ModelAndView showList() {
         ModelAndView modelAndView = new ModelAndView("list");
         modelAndView.addObject("bookList", bookService.findAll());
         return modelAndView;
     }
 
     @GetMapping("/borrow/{id}")
-    public ModelAndView showEdit(@PathVariable (name = "id") int idBook){
+    public ModelAndView showEdit(@PathVariable(name = "id") int idBook) {
         Book book = this.bookService.findById(idBook);
-        if (book != null){
+        if (book != null) {
             ModelAndView modelAndView = new ModelAndView("borrow");
-            int codeBook = (int) Math.round(Math.random()*100);
+            int codeBook = (int) Math.round(Math.random() * 100);
             modelAndView.addObject("numberBook", codeBook);
             modelAndView.addObject("bookObject", book);
             return modelAndView;
@@ -41,12 +41,12 @@ public class BookController {
 
     @PostMapping("/borrow")
     public ModelAndView saveCodeBook(@RequestParam(name = "numberBook") int numberBook,
-                                     @ModelAttribute (name = "bookObject")Book book) throws OutOfBookException {
+                                     @ModelAttribute(name = "bookObject") Book book) throws OutOfBookException {
         ModelAndView modelAndView = new ModelAndView("redirect:/book/list");
-        if (book.getQuantity()==0){
+        if (book.getQuantity() == 0) {
             throw new OutOfBookException("Hết sách rồi");
         }
-        this.bookService.updateBook(book.getQuantity()-1, book.getId());
+        this.bookService.updateBook(book.getQuantity() - 1, book.getId());
         Book bookNewObject = this.bookService.findById(book.getId());
         CodeBook codeBook = new CodeBook();
         codeBook.setNumberBook(numberBook);
@@ -56,9 +56,9 @@ public class BookController {
     }
 
     @GetMapping("/return/{id}")
-    public ModelAndView showReturn(@PathVariable(name = "id") int idBook){
+    public ModelAndView showReturn(@PathVariable(name = "id") int idBook) {
         Book book = this.bookService.findById(idBook);
-        if (book != null){
+        if (book != null) {
             ModelAndView modelAndView = new ModelAndView("return");
             modelAndView.addObject("bookObject", book);
             return modelAndView;
@@ -68,15 +68,15 @@ public class BookController {
     }
 
     @PostMapping("/return")
-    public ModelAndView returnBook(@ModelAttribute("bookObject") Book book, @RequestParam(name = "numberBook")int numberBook){
+    public ModelAndView returnBook(@ModelAttribute("bookObject") Book book, @RequestParam(name = "numberBook") int numberBook) {
         this.codeBookService.removeCodeBook(numberBook);
-        this.bookService.updateBook(book.getQuantity()+1, book.getId());
+        this.bookService.updateBook(book.getQuantity() + 1, book.getId());
         return new ModelAndView("redirect:/book/list");
     }
 
     @ExceptionHandler(OutOfBookException.class)
-    public ModelAndView outOfBook(RedirectAttributes redirectAttributes){
-        redirectAttributes.addFlashAttribute("msg","Vui lòng mượn sách khác");
+    public ModelAndView outOfBook(RedirectAttributes redirectAttributes) {
+        redirectAttributes.addFlashAttribute("msg", "Vui lòng mượn sách khác");
         return new ModelAndView("redirect:/book/list");
     }
 }

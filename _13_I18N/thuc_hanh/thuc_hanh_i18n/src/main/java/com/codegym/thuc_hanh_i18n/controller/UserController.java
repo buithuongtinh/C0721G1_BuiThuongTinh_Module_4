@@ -12,14 +12,14 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class UserController {
     @GetMapping("/home")
-    public ModelAndView create(){
-        return new ModelAndView("index","userObj",new User());
+    public ModelAndView create() {
+        return new ModelAndView("index", "userObj", new User());
     }
 
     @PostMapping("/doLogin")
     public ModelAndView doLogin(@ModelAttribute User user) {
-        if(user.getUserName().equals("admin") && user.getPassword().equals("123456")){
-            return new ModelAndView ("success","user", user);
+        if (user.getUserName().equals("admin") && user.getPassword().equals("123456")) {
+            return new ModelAndView("success", "user", user);
         }
         return new ModelAndView("error");
     }

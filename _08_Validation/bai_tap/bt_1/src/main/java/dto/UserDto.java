@@ -8,11 +8,11 @@ import javax.validation.constraints.*;
 
 public class UserDto implements Validator {
     private Integer id;
-    @NotEmpty (message = "khong duoc de trong truong nay")
-    @Length(min=5,max = 45,message = "Do dai ten: 5 <= lastName <=45 ky tu")
+    @NotEmpty(message = "khong duoc de trong truong nay")
+    @Length(min = 5, max = 45, message = "Do dai ten: 5 <= lastName <=45 ky tu")
     private String firstName;
-    @NotBlank (message = "khong duoc de trong truong nay")
-    @Length(min=5,max = 45,message = "Do dai ten: 5 <= lastName <=45 ky tu")
+    @NotBlank(message = "khong duoc de trong truong nay")
+    @Length(min = 5, max = 45, message = "Do dai ten: 5 <= lastName <=45 ky tu")
     private String lastName;
 
     //PhoneNumber
@@ -85,16 +85,16 @@ public class UserDto implements Validator {
 
     @Override
     public void validate(Object target, Errors errors) {
-        UserDto userDto =(UserDto)  target;
-        String phoneNumber =userDto.getPhoneNumber();
-        if (!phoneNumber.startsWith("0")){
-            errors.rejectValue("number","number.length","phone number must be start with 0");
+        UserDto userDto = (UserDto) target;
+        String phoneNumber = userDto.getPhoneNumber();
+        if (!phoneNumber.startsWith("0")) {
+            errors.rejectValue("number", "number.length", "phone number must be start with 0");
         }
-        if (phoneNumber.length()>11||phoneNumber.length()<10){
-            errors.rejectValue("number","number.length","phone number must have 10 or 11 digit");
+        if (phoneNumber.length() > 11 || phoneNumber.length() < 10) {
+            errors.rejectValue("number", "number.length", "phone number must have 10 or 11 digit");
         }
-        if (phoneNumber.matches("^[a-zA-Z]+$")){
-            errors.rejectValue("number","number.containLetter","phone number NOT contain letter");
+        if (phoneNumber.matches("^[a-zA-Z]+$")) {
+            errors.rejectValue("number", "number.containLetter", "phone number NOT contain letter");
         }
 
     }

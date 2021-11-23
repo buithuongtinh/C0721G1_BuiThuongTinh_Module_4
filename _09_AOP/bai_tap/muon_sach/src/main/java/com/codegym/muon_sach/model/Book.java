@@ -12,7 +12,7 @@ public class Book {
     private String name;
     private int quantity;
     private String typeBook;
-    @OneToMany(mappedBy = "book",cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "book", cascade = CascadeType.ALL)
     private Set<CodeBook> codeBooks;
 
     public Book() {

@@ -9,7 +9,7 @@ import java.util.List;
 
 
 @Service
-public class BookServiceImp implements BookService{
+public class BookServiceImp implements BookService {
 
     @Autowired
     private BookRepository bookRepository;

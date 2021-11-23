@@ -39,29 +39,33 @@ public class BlogController {
 
     @GetMapping("/delete/{id}")
     public ModelAndView delete(@PathVariable int id) {
-        ModelAndView modelAndView =new ModelAndView("delete");
-        modelAndView.addObject("blog",iBlogService.findByid(id));
+        ModelAndView modelAndView = new ModelAndView("delete");
+        modelAndView.addObject("blog", iBlogService.findByid(id));
         return modelAndView;
     }
+
     @PostMapping("/delete")
-    public String deleteBlog (@ModelAttribute Blog blog, RedirectAttributes redirectAttributes) {
+    public String deleteBlog(@ModelAttribute Blog blog, RedirectAttributes redirectAttributes) {
         iBlogService.delete(blog.getId());
         redirectAttributes.addFlashAttribute("message", "New blog was successful deleted");
         return "redirect:/list";
     }
+
     @GetMapping("/edit/{id}")
-    public String editshow(Model model,@PathVariable int id){
-        model.addAttribute("blog",this.iBlogService.findByid(id));
+    public String editshow(Model model, @PathVariable int id) {
+        model.addAttribute("blog", this.iBlogService.findByid(id));
         return "edit";
     }
+
     @PostMapping("/edit")
-    public String edit(@ModelAttribute Blog blog){
+    public String edit(@ModelAttribute Blog blog) {
         this.iBlogService.update(blog);
         return "redirect:/list";
     }
+
     @GetMapping("/detail/{id}")
-    public String detail(@PathVariable int id,Model model){
-        model.addAttribute("blog",this.iBlogService.findByid(id));
+    public String detail(@PathVariable int id, Model model) {
+        model.addAttribute("blog", this.iBlogService.findByid(id));
         return "detail";
     }
 }

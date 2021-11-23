@@ -9,7 +9,10 @@ import java.util.Optional;
 
 public interface IBlogService {
     List<Blog> findAllBlog();
+
     Optional<Blog> findById(int id);
+
     List<Blog> findByNameCategory(String nameCategory);
+
     Page<Blog> findAllBlogPage(Pageable pageable);
 }

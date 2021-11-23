@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b396c1a9-1bfd-4080-8ac6-3742b0da32a2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/_01_tong_quan_Spring_MVC/thuc_hanh/bai_2/thuc_hanh_2 _quan_ly_kh/src/main/webapp/WEB-INF/app-conf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_02_spring_controller/bai_tap/customer-management/src/main/java/cg/wbd/grandemonstration/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_02_spring_controller/bai_tap/customer-management/src/main/java/cg/wbd/grandemonstration/configuration/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_05_ORM/thuc_hanh/quan_ly_danh_sach_khach_hang/src/main/java/cg/wbd/grandemonstration/service/impl/HibernateCustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_05_ORM/thuc_hanh/quan_ly_danh_sach_khach_hang/src/main/resources/hibernate.conf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_09_AOP/thuc_hanh/thuc_hanh_1/customer-management/src/main/java/cg/wbd/grandemonstration/logger/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/dto/CustomerDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/dto/EmployeeDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/model/contract/AttachService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/model/contract/Contract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/model/contract/ContractDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/model/customer/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/model/customer/CustomerType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/model/employee/Division.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/model/employee/EducationDegree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/model/employee/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/model/employee/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/model/user/MyUserDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/model/user/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/model/user/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/repository/customer/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/repository/customer/CustomerTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/repository/employee/IDivisionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/repository/employee/IEducationDegreeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/repository/employee/IEmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/repository/employee/IPositionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/service/customer/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/service/customer/ICustomerTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/service/employee/IDivisionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/service/employee/IEducationDegreeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/service/employee/IEmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/service/employee/IPositionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/service/impl/CreateBCryptPass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/service/impl/MyUserDetailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/service/impl/customer/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/service/impl/customer/CustomerTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/service/impl/employee/DivisionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/service/impl/employee/EducationDegreeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/service/impl/employee/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/java/com/codegym/service/impl/employee/PositionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/resources/static/gg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/resources/templates/customer/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/resources/templates/customer/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/resources/templates/customer/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/resources/templates/employee/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/resources/templates/employee/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/resources/templates/employee/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/resources/templates/layout/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study_mod_4/src/main/resources/templates/layout/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_01_tong_quan_Spring_MVC/thuc_hanh/bai_2/thuc_hanh_2 _quan_ly_kh/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/_01_tong_quan_Spring_MVC/thuc_hanh/bai_2/thuc_hanh_2 _quan_ly_kh/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_01_tong_quan_Spring_MVC/thuc_hanh/bai_2/thuc_hanh_2 _quan_ly_kh/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_01_tong_quan_Spring_MVC/thuc_hanh/bai_2/thuc_hanh_2 _quan_ly_kh/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_02_spring_controller/bai_tap/customer-management/src/main/java/cg/wbd/grandemonstration/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_02_spring_controller/bai_tap/customer-management/src/main/java/cg/wbd/grandemonstration/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_02_spring_controller/bai_tap/customer-management/src/main/webapp/WEB-INF/app-conf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_02_spring_controller/bai_tap/customer-management/src/main/webapp/WEB-INF/app-conf.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_02_spring_controller/bai_tap/customer-management/src/main/webapp/customers/info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/_02_spring_controller/bai_tap/customer-management/src/main/webapp/WEB-INF/templates/customers/info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_02_spring_controller/bai_tap/customer-management/src/main/webapp/customers/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/_02_spring_controller/bai_tap/customer-management/src/main/webapp/WEB-INF/templates/customers/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_ORM/bai_tap/ung_dung_nghe_nhac/src/main/java/com/codegym/configuration/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/_05_ORM/bai_tap/ung_dung_nghe_nhac/src/main/java/com/codegym/configuration/AppConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_ORM/bai_tap/ung_dung_nghe_nhac/src/main/java/com/codegym/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_05_ORM/bai_tap/ung_dung_nghe_nhac/src/main/java/com/codegym/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_ORM/bai_tap/ung_dung_nghe_nhac/src/main/java/com/codegym/model/bean/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/_05_ORM/bai_tap/ung_dung_nghe_nhac/src/main/java/com/codegym/model/bean/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_ORM/bai_tap/ung_dung_nghe_nhac/src/main/java/com/codegym/model/repository/IProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/_05_ORM/bai_tap/ung_dung_nghe_nhac/src/main/java/com/codegym/model/repository/IProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_ORM/bai_tap/ung_dung_nghe_nhac/src/main/java/com/codegym/model/service/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/_05_ORM/bai_tap/ung_dung_nghe_nhac/src/main/java/com/codegym/model/service/IProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_ORM/bai_tap/ung_dung_nghe_nhac/src/main/webapp/WEB-INF/views/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/_05_ORM/bai_tap/ung_dung_nghe_nhac/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_ORM/bai_tap/ung_dung_nghe_nhac/src/main/webapp/WEB-INF/views/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/_05_ORM/bai_tap/ung_dung_nghe_nhac/src/main/webapp/WEB-INF/views/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_ORM/bai_tap/ung_dung_nghe_nhac/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/_05_ORM/bai_tap/ung_dung_nghe_nhac/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_ORM/thuc_hanh/quan_ly_danh_sach_khach_hang/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/_05_ORM/thuc_hanh/quan_ly_danh_sach_khach_hang/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_ORM/thuc_hanh/quan_ly_danh_sach_khach_hang/src/main/java/cg/wbd/grandemonstration/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/_05_ORM/thuc_hanh/quan_ly_danh_sach_khach_hang/src/main/java/cg/wbd/grandemonstration/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_ORM/thuc_hanh/quan_ly_danh_sach_khach_hang/src/main/webapp/WEB-INF/templates/customers/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/_05_ORM/thuc_hanh/quan_ly_danh_sach_khach_hang/src/main/webapp/WEB-INF/templates/customers/info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_ORM/thuc_hanh/quan_ly_danh_sach_khach_hang/src/main/webapp/WEB-INF/templates/customers/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/_05_ORM/thuc_hanh/quan_ly_danh_sach_khach_hang/src/main/webapp/WEB-INF/templates/customers/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_06_JPA/bai_tap/blog/src/main/java/com/codegym/blog/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_06_JPA/bai_tap/blog/src/main/java/com/codegym/blog/controller/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_06_JPA/bai_tap/blog/src/main/java/com/codegym/blog/repository/IBlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/_06_JPA/bai_tap/blog/src/main/java/com/codegym/blog/repository/IBlogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_06_JPA/bai_tap/blog/src/main/java/com/codegym/blog/service/IBlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/_06_JPA/bai_tap/blog/src/main/java/com/codegym/blog/service/IBlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_06_JPA/bai_tap/blog/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/_06_JPA/bai_tap/blog/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_06_JPA/bai_tap/blog/src/main/resources/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/_06_JPA/bai_tap/blog/src/main/resources/templates/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_06_JPA/bai_tap/blog/src/main/resources/templates/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/_06_JPA/bai_tap/blog/src/main/resources/templates/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_06_JPA/bai_tap/blog/src/main/resources/templates/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/_06_JPA/bai_tap/blog/src/main/resources/templates/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_06_JPA/bai_tap/blog/src/main/resources/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/_06_JPA/bai_tap/blog/src/main/resources/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_06_JPA/thuc_hanh/th1_customer-management/src/main/java/com/codegym/cms/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/_06_JPA/thuc_hanh/th1_customer-management/src/main/java/com/codegym/cms/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_06_JPA/thuc_hanh/th1_customer-management/src/main/java/com/codegym/cms/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/_06_JPA/thuc_hanh/th1_customer-management/src/main/java/com/codegym/cms/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_06_JPA/thuc_hanh/th1_customer-management/src/main/java/com/codegym/cms/repository/ICustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/_06_JPA/thuc_hanh/th1_customer-management/src/main/java/com/codegym/cms/repository/ICustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_06_JPA/thuc_hanh/th1_customer-management/src/main/java/com/codegym/cms/repository/IGeneralRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/_06_JPA/thuc_hanh/th1_customer-management/src/main/java/com/codegym/cms/repository/IGeneralRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_06_JPA/thuc_hanh/th1_customer-management/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/_06_JPA/thuc_hanh/th1_customer-management/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_08_Validation/bai_tap/bt_1/src/main/java/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_08_Validation/bai_tap/bt_1/src/main/java/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_08_Validation/bai_tap/bt_1/src/main/java/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/_08_Validation/bai_tap/bt_1/src/main/java/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_08_Validation/bai_tap/bt_1/src/main/java/repository/IUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/_08_Validation/bai_tap/bt_1/src/main/java/repository/IUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_08_Validation/bai_tap/bt_1/src/main/java/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/_08_Validation/bai_tap/bt_1/src/main/java/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_08_Validation/bai_tap/bt_1/src/main/resources/ValidatorMessage.properties" beforeDir="false" afterPath="$PROJECT_DIR$/_08_Validation/bai_tap/bt_1/src/main/resources/ValidatorMessage.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_08_Validation/bai_tap/bt_1/src/main/resources/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/_08_Validation/bai_tap/bt_1/src/main/resources/templates/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_08_Validation/bai_tap/validate_thong_tin_bai_hat/src/main/java/com/codegym/validate_thong_tin_bai_hat/controller/MusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_08_Validation/bai_tap/validate_thong_tin_bai_hat/src/main/java/com/codegym/validate_thong_tin_bai_hat/controller/MusicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_08_Validation/bai_tap/validate_thong_tin_bai_hat/src/main/java/com/codegym/validate_thong_tin_bai_hat/dto/MusicDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/_08_Validation/bai_tap/validate_thong_tin_bai_hat/src/main/java/com/codegym/validate_thong_tin_bai_hat/dto/MusicDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_08_Validation/bai_tap/validate_thong_tin_bai_hat/src/main/java/com/codegym/validate_thong_tin_bai_hat/repository/MusicRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/_08_Validation/bai_tap/validate_thong_tin_bai_hat/src/main/java/com/codegym/validate_thong_tin_bai_hat/repository/MusicRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_08_Validation/bai_tap/validate_thong_tin_bai_hat/src/main/java/com/codegym/validate_thong_tin_bai_hat/service/MusicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/_08_Validation/bai_tap/validate_thong_tin_bai_hat/src/main/java/com/codegym/validate_thong_tin_bai_hat/service/MusicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_08_Validation/bai_tap/validate_thong_tin_bai_hat/src/main/resources/validation_message.properties" beforeDir="false" afterPath="$PROJECT_DIR$/_08_Validation/bai_tap/validate_thong_tin_bai_hat/src/main/resources/validation_message.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_08_Validation/thuc_hanh/custom_validation/src/main/java/controller/PhoneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_08_Validation/thuc_hanh/custom_validation/src/main/java/controller/PhoneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_08_Validation/thuc_hanh/custom_validation/src/main/resources/ValidatorMessage.properties" beforeDir="false" afterPath="$PROJECT_DIR$/_08_Validation/thuc_hanh/custom_validation/src/main/resources/ValidatorMessage.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_08_Validation/thuc_hanh/validate-infor-user/src/main/java/model/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/_08_Validation/thuc_hanh/validate-infor-user/src/main/java/model/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_08_Validation/thuc_hanh/validate-infor-user/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_08_Validation/thuc_hanh/validate-infor-user/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09_AOP/bai_tap/muon_sach/src/main/java/com/codegym/muon_sach/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_09_AOP/bai_tap/muon_sach/src/main/java/com/codegym/muon_sach/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09_AOP/bai_tap/muon_sach/src/main/java/com/codegym/muon_sach/controller/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/_09_AOP/bai_tap/muon_sach/src/main/java/com/codegym/muon_sach/controller/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09_AOP/bai_tap/muon_sach/src/main/java/com/codegym/muon_sach/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/_09_AOP/bai_tap/muon_sach/src/main/java/com/codegym/muon_sach/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09_AOP/bai_tap/muon_sach/src/main/java/com/codegym/muon_sach/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/_09_AOP/bai_tap/muon_sach/src/main/java/com/codegym/muon_sach/repository/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09_AOP/bai_tap/muon_sach/src/main/java/com/codegym/muon_sach/repository/CodeBookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/_09_AOP/bai_tap/muon_sach/src/main/java/com/codegym/muon_sach/repository/CodeBookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09_AOP/bai_tap/muon_sach/src/main/java/com/codegym/muon_sach/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/_09_AOP/bai_tap/muon_sach/src/main/java/com/codegym/muon_sach/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09_AOP/bai_tap/muon_sach/src/main/java/com/codegym/muon_sach/service/BookServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/_09_AOP/bai_tap/muon_sach/src/main/java/com/codegym/muon_sach/service/BookServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09_AOP/bai_tap/muon_sach/src/main/java/com/codegym/muon_sach/service/CodeBookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/_09_AOP/bai_tap/muon_sach/src/main/java/com/codegym/muon_sach/service/CodeBookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09_AOP/bai_tap/muon_sach/src/main/java/com/codegym/muon_sach/service/CodeBookServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/_09_AOP/bai_tap/muon_sach/src/main/java/com/codegym/muon_sach/service/CodeBookServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09_AOP/bai_tap/muon_sach/src/main/resources/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/_09_AOP/bai_tap/muon_sach/src/main/resources/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09_AOP/thuc_hanh/thuc_hanh_1/customer-management/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/_09_AOP/thuc_hanh/thuc_hanh_1/customer-management/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09_AOP/thuc_hanh/thuc_hanh_1/customer-management/src/main/java/cg/wbd/grandemonstration/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/_09_AOP/thuc_hanh/thuc_hanh_1/customer-management/src/main/java/cg/wbd/grandemonstration/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09_AOP/thuc_hanh/thuc_hanh_1/customer-management/src/main/java/cg/wbd/grandemonstration/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_09_AOP/thuc_hanh/thuc_hanh_1/customer-management/src/main/java/cg/wbd/grandemonstration/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09_AOP/thuc_hanh/thuc_hanh_1/customer-management/src/main/webapp/WEB-INF/templates/customers/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/_09_AOP/thuc_hanh/thuc_hanh_1/customer-management/src/main/webapp/WEB-INF/templates/customers/info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09_AOP/thuc_hanh/thuc_hanh_1/customer-management/src/main/webapp/WEB-INF/templates/customers/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/_09_AOP/thuc_hanh/thuc_hanh_1/customer-management/src/main/webapp/WEB-INF/templates/customers/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_11_web_service/bai_tap/restful_for_blog/src/main/java/com/codegym/restful_for_blog/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_11_web_service/bai_tap/restful_for_blog/src/main/java/com/codegym/restful_for_blog/controller/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_11_web_service/bai_tap/restful_for_blog/src/main/java/com/codegym/restful_for_blog/repository/IBlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/_11_web_service/bai_tap/restful_for_blog/src/main/java/com/codegym/restful_for_blog/repository/IBlogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_11_web_service/bai_tap/restful_for_blog/src/main/java/com/codegym/restful_for_blog/repository/ICategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/_11_web_service/bai_tap/restful_for_blog/src/main/java/com/codegym/restful_for_blog/repository/ICategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_11_web_service/bai_tap/restful_for_blog/src/main/java/com/codegym/restful_for_blog/service/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/_11_web_service/bai_tap/restful_for_blog/src/main/java/com/codegym/restful_for_blog/service/BlogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_11_web_service/bai_tap/restful_for_blog/src/main/java/com/codegym/restful_for_blog/service/IBlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/_11_web_service/bai_tap/restful_for_blog/src/main/java/com/codegym/restful_for_blog/service/IBlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_11_web_service/bai_tap/restful_for_blog/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/_11_web_service/bai_tap/restful_for_blog/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_11_web_service/thuc_hanh/su_dung_restful/src/main/java/com/codegym/su_dung_restful/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_11_web_service/thuc_hanh/su_dung_restful/src/main/java/com/codegym/su_dung_restful/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_11_web_service/thuc_hanh/su_dung_restful/src/main/java/com/codegym/su_dung_restful/service/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/_11_web_service/thuc_hanh/su_dung_restful/src/main/java/com/codegym/su_dung_restful/service/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_12_jQuery_&amp;_AJAX/bai_tap/blog/src/main/java/com/codegym/blog/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_12_jQuery_&amp;_AJAX/bai_tap/blog/src/main/java/com/codegym/blog/controller/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_12_jQuery_&amp;_AJAX/bai_tap/blog/src/main/java/com/codegym/blog/repository/IBlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/_12_jQuery_&amp;_AJAX/bai_tap/blog/src/main/java/com/codegym/blog/repository/IBlogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_12_jQuery_&amp;_AJAX/bai_tap/blog/src/main/java/com/codegym/blog/repository/ICategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/_12_jQuery_&amp;_AJAX/bai_tap/blog/src/main/java/com/codegym/blog/repository/ICategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_12_jQuery_&amp;_AJAX/bai_tap/blog/src/main/java/com/codegym/blog/service/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/_12_jQuery_&amp;_AJAX/bai_tap/blog/src/main/java/com/codegym/blog/service/BlogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_12_jQuery_&amp;_AJAX/bai_tap/blog/src/main/java/com/codegym/blog/service/IBlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/_12_jQuery_&amp;_AJAX/bai_tap/blog/src/main/java/com/codegym/blog/service/IBlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_12_jQuery_&amp;_AJAX/bai_tap/blog/src/main/resources/templates/homeView.html" beforeDir="false" afterPath="$PROJECT_DIR$/_12_jQuery_&amp;_AJAX/bai_tap/blog/src/main/resources/templates/homeView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_12_jQuery_&amp;_AJAX/thuc_hanh/thuc_hanh_1/src/main/resources/templates/th-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/_12_jQuery_&amp;_AJAX/thuc_hanh/thuc_hanh_1/src/main/resources/templates/th-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_12_jQuery_&amp;_AJAX/thuc_hanh/thuc_hanh_1/src/main/resources/templates/th_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/_12_jQuery_&amp;_AJAX/thuc_hanh/thuc_hanh_1/src/main/resources/templates/th_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_12_jQuery_&amp;_AJAX/thuc_hanh/thuc_hanh_2/src/main/java/com/codegym/thuc_hanh_2/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_12_jQuery_&amp;_AJAX/thuc_hanh/thuc_hanh_2/src/main/java/com/codegym/thuc_hanh_2/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_12_jQuery_&amp;_AJAX/thuc_hanh/thuc_hanh_2/src/main/java/com/codegym/thuc_hanh_2/model/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/_12_jQuery_&amp;_AJAX/thuc_hanh/thuc_hanh_2/src/main/java/com/codegym/thuc_hanh_2/model/Smartphone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_13_I18N/bai_tap/src/main/java/com/codegym/bt_1/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_13_I18N/bai_tap/src/main/java/com/codegym/bt_1/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_13_I18N/bai_tap/src/main/java/com/codegym/bt_1/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/_13_I18N/bai_tap/src/main/java/com/codegym/bt_1/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_13_I18N/bai_tap/src/main/java/com/codegym/bt_1/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/_13_I18N/bai_tap/src/main/java/com/codegym/bt_1/service/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_13_I18N/bai_tap/src/main/resources/message/mgs_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/_13_I18N/bai_tap/src/main/resources/message/mgs_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_13_I18N/bai_tap/src/main/resources/message/mgs_ja.properties" beforeDir="false" afterPath="$PROJECT_DIR$/_13_I18N/bai_tap/src/main/resources/message/mgs_ja.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_13_I18N/thuc_hanh/thuc_hanh_i18n/src/main/java/com/codegym/thuc_hanh_i18n/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/_13_I18N/thuc_hanh/thuc_hanh_i18n/src/main/java/com/codegym/thuc_hanh_i18n/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_13_I18N/thuc_hanh/thuc_hanh_i18n/src/main/java/com/codegym/thuc_hanh_i18n/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_13_I18N/thuc_hanh/thuc_hanh_i18n/src/main/java/com/codegym/thuc_hanh_i18n/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_13_I18N/thuc_hanh/thuc_hanh_i18n/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/_13_I18N/thuc_hanh/thuc_hanh_i18n/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_13_I18N/thuc_hanh/thuc_hanh_i18n/src/main/resources/message/msg.properties" beforeDir="false" afterPath="$PROJECT_DIR$/_13_I18N/thuc_hanh/thuc_hanh_i18n/src/main/resources/message/msg.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_13_I18N/thuc_hanh/thuc_hanh_i18n/src/main/resources/message/msg_haw.properties" beforeDir="false" afterPath="$PROJECT_DIR$/_13_I18N/thuc_hanh/thuc_hanh_i18n/src/main/resources/message/msg_haw.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Security/bai_tap/blog_update/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Security/bai_tap/blog_update/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Security/bai_tap/blog_update/src/main/java/com/codegym/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Security/bai_tap/blog_update/src/main/java/com/codegym/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Security/bai_tap/blog_update/src/main/java/com/codegym/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Security/bai_tap/blog_update/src/main/java/com/codegym/controller/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Security/bai_tap/blog_update/src/main/java/com/codegym/model/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Security/bai_tap/blog_update/src/main/java/com/codegym/model/Blog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Security/bai_tap/blog_update/src/main/java/com/codegym/model/MyUserDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Security/bai_tap/blog_update/src/main/java/com/codegym/model/MyUserDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Security/bai_tap/blog_update/src/main/java/com/codegym/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Security/bai_tap/blog_update/src/main/java/com/codegym/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Security/bai_tap/blog_update/src/main/java/com/codegym/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Security/bai_tap/blog_update/src/main/java/com/codegym/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Security/bai_tap/blog_update/src/main/java/com/codegym/repository/IBlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Security/bai_tap/blog_update/src/main/java/com/codegym/repository/IBlogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Security/bai_tap/blog_update/src/main/java/com/codegym/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Security/bai_tap/blog_update/src/main/java/com/codegym/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Security/bai_tap/blog_update/src/main/java/com/codegym/service/IBlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Security/bai_tap/blog_update/src/main/java/com/codegym/service/IBlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Security/bai_tap/blog_update/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Security/bai_tap/blog_update/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Security/bai_tap/blog_update/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Security/bai_tap/blog_update/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thymeleaf/src/main/java/vn/codegym/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/thymeleaf/src/main/java/vn/codegym/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thymeleaf/src/main/java/vn/codegym/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/thymeleaf/src/main/java/vn/codegym/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thymeleaf/src/main/java/vn/codegym/repository/StudentRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/thymeleaf/src/main/java/vn/codegym/repository/StudentRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thymeleaf/src/main/java/vn/codegym/service/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/thymeleaf/src/main/java/vn/codegym/service/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thymeleaf/src/main/java/vn/codegym/service/StudentServiceImpl2.java" beforeDir="false" afterPath="$PROJECT_DIR$/thymeleaf/src/main/java/vn/codegym/service/StudentServiceImpl2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thymeleaf/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/thymeleaf/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thymeleaf/src/main/webapp/WEB-INF/views/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/thymeleaf/src/main/webapp/WEB-INF/views/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thymeleaf/src/main/webapp/WEB-INF/views/student/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/thymeleaf/src/main/webapp/WEB-INF/views/student/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thymeleaf/src/main/webapp/WEB-INF/views/student/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/thymeleaf/src/main/webapp/WEB-INF/views/student/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thymeleaf/src/main/webapp/WEB-INF/views/student/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/thymeleaf/src/main/webapp/WEB-INF/views/student/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thymeleaf/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/thymeleaf/src/main/webapp/index.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="21GkXEelOvxuxM6MfR9C6LhfAO1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b396c1a9-1bfd-4080-8ac6-3742b0da32a2" name="Default Changelist" comment="" />
+      <created>1637574848050</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637574848050</updated>
+      <workItem from="1637574873551" duration="20000" />
+    </task>
+    <servers />
+  </component>
+</project>

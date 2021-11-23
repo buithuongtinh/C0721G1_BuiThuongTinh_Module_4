@@ -30,16 +30,17 @@
                 <input type="radio" th:field="*{gender}" value="1" th:text="Male">
                 <input type="radio" th:field="*{gender}" value="0" th:text="Female">
                 <input type="radio" th:field="*{gender}" value="2" th:text="LGBT">
-<!--                <form:radiobutton path="gender" value="1" label="Male"/>-->
-<!--                <form:radiobutton path="gender" value="0" label="FeMale"/>-->
-<!--                <form:radiobutton path="gender" value="2" label="LGBT"/>-->
+                <!--                <form:radiobutton path="gender" value="1" label="Male"/>-->
+                <!--                <form:radiobutton path="gender" value="0" label="FeMale"/>-->
+                <!--                <form:radiobutton path="gender" value="2" label="LGBT"/>-->
             </td>
         </tr>
         <tr>
             <th>Languages:</th>
             <td>
-                <input type="checkbox" th:field="*{languages}" th:each="lang: ${languageList}" th:text="${lang}" th:value="${lang}">
-<!--                <form:checkboxes path="languages" items="${languageList}" />-->
+                <input type="checkbox" th:field="*{languages}" th:each="lang: ${languageList}" th:text="${lang}"
+                       th:value="${lang}">
+                <!--                <form:checkboxes path="languages" items="${languageList}" />-->
             </td>
         </tr>
         <tr>

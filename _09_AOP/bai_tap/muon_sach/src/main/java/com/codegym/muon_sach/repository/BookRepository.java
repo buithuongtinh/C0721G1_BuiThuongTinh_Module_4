@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Repository
 public interface BookRepository extends JpaRepository<Book, Integer> {
-    @Query(value= "update book set quantity = :quantity where id = :idBook", nativeQuery = true)
+    @Query(value = "update book set quantity = :quantity where id = :idBook", nativeQuery = true)
     @Modifying
     @Transactional
     void updateBook(@Param("quantity") int quantity, @Param("idBook") int idBook);

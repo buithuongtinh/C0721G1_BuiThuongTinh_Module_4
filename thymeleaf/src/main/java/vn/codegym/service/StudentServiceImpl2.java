@@ -6,7 +6,7 @@ import vn.codegym.model.Student;
 import java.util.List;
 
 @Service
-public class StudentServiceImpl2 implements IStudentService{
+public class StudentServiceImpl2 implements IStudentService {
     @Override
     public List<Student> findAll() {
         return null;

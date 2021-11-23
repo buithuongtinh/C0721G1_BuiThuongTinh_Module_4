@@ -8,13 +8,16 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class Log {
-    private int count =1;
+    private int count = 1;
 
     @Pointcut("within(com.example.demo.controller.BookController*))")
-    public void allMethodOfBook(){};
+    public void allMethodOfBook() {
+    }
+
+    ;
 
     @Before("allMethodOfBook()")
-    public void beforeMethodWriteLog(){
+    public void beforeMethodWriteLog() {
         System.out.println("Số lần truy cập vào book " + count++);
     }
 }

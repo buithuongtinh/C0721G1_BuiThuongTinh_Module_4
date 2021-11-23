@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/_01_tong_quan_Spring_MVC/thuc_hanh/bai_2/thuc_hanh_2 _quan_ly_kh" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/_02_spring_controller/bai_tap/customer-management" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/_05_ORM/thuc_hanh/quan_ly_danh_sach_khach_hang" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/_09_AOP/thuc_hanh/thuc_hanh_1/customer-management" vcs="Git" />
+  </component>
+</project>

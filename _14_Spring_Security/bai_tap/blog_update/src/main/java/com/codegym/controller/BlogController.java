@@ -1,4 +1,5 @@
 package com.codegym.controller;
+
 import com.codegym.model.Blog;
 import com.codegym.service.IBlogService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,23 +32,26 @@ public class BlogController {
     }
 
     @PostMapping("/create")
-    public String save(@ModelAttribute Blog blog, RedirectAttributes redirectAttributes ) {
+    public String save(@ModelAttribute Blog blog, RedirectAttributes redirectAttributes) {
         this.iBlogService.save(blog);
         redirectAttributes.addFlashAttribute("messAdd", "add" + blog.getHeaderBlog() + "ok");
         return "redirect:/list";
     }
+
     @GetMapping("/delete/{id}")
-    public String remove(@PathVariable long id){
+    public String remove(@PathVariable long id) {
         this.iBlogService.delete(id);
         return "redirect:/list";
     }
+
     @GetMapping("/update/{id}")
-    public String updateForm(@PathVariable long id,Model model){
-        model.addAttribute("blog",this.iBlogService.findById(id));
+    public String updateForm(@PathVariable long id, Model model) {
+        model.addAttribute("blog", this.iBlogService.findById(id));
         return "update";
     }
+
     @PostMapping("/update")
-    public String update(@ModelAttribute Blog blog){
+    public String update(@ModelAttribute Blog blog) {
         this.iBlogService.save(blog);
         return "redirect:/list";
     }

@@ -22,55 +22,53 @@ public class MusicController {
     private MusicService musicService;
 
     @GetMapping("/create")
-    public ModelAndView showCreate(){
+    public ModelAndView showCreate() {
         ModelAndView modelAndView = new ModelAndView("create");
-        modelAndView.addObject("songObject",new MusicDto());
+        modelAndView.addObject("songObject", new MusicDto());
         return modelAndView;
     }
 
     @PostMapping("/create")
-    public String createMusic(@Valid @ModelAttribute(name = "songObject") MusicDto musicDto, BindingResult bindingResult, Model model)
-    {
-        new MusicDto().validate(musicDto,bindingResult);
-        if (bindingResult.hasFieldErrors()){
+    public String createMusic(@Valid @ModelAttribute(name = "songObject") MusicDto musicDto, BindingResult bindingResult, Model model) {
+        new MusicDto().validate(musicDto, bindingResult);
+        if (bindingResult.hasFieldErrors()) {
             return "create";
         }
         Music music = new Music();
-        BeanUtils.copyProperties(musicDto,music);
+        BeanUtils.copyProperties(musicDto, music);
         musicService.saveMusic(music);
         return "redirect:/music/list";
     }
 
     @GetMapping("/list")
-    public String showList(Model model){
+    public String showList(Model model) {
         List<Music> music = this.musicService.findAll();
-        model.addAttribute("musicList",music);
+        model.addAttribute("musicList", music);
         return "list";
     }
+
     @GetMapping("/update/{id}")
-    public ModelAndView showEdit(@PathVariable int id){
+    public ModelAndView showEdit(@PathVariable int id) {
         Music music = musicService.findById(id);
         MusicDto musicDto = new MusicDto();
         BeanUtils.copyProperties(music, musicDto);
-        return new ModelAndView("edit","musicList",musicDto);
+        return new ModelAndView("edit", "musicList", musicDto);
 
     }
 
     @PostMapping("/update")
-    public String updateMusic(@Valid @ModelAttribute MusicDto musicDto, BindingResult bindingResult, RedirectAttributes redirectAttributes){
+    public String updateMusic(@Valid @ModelAttribute MusicDto musicDto, BindingResult bindingResult, RedirectAttributes redirectAttributes) {
         new MusicDto().validate(musicDto, bindingResult);
-        if (bindingResult.hasFieldErrors()){
+        if (bindingResult.hasFieldErrors()) {
             return "edit";
-        }else {
-        Music music = new Music();
-        BeanUtils.copyProperties(musicDto, music);
-        this.musicService.saveMusic(music);
-        redirectAttributes.addFlashAttribute("messages","Update done");
-        return "redirect:/music/list";}
+        } else {
+            Music music = new Music();
+            BeanUtils.copyProperties(musicDto, music);
+            this.musicService.saveMusic(music);
+            redirectAttributes.addFlashAttribute("messages", "Update done");
+            return "redirect:/music/list";
+        }
     }
-
-
-
 
 
 }

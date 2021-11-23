@@ -21,7 +21,7 @@ public class CustomerController {
 
     @GetMapping
     public ResponseEntity<Iterable<Customer>> findAllCustomer() {
-        List<Customer> customers =customerService.findAll();
+        List<Customer> customers = customerService.findAll();
         if (customers.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }

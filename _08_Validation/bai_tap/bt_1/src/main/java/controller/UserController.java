@@ -22,21 +22,21 @@ public class UserController {
 
     @GetMapping("")
     public ModelAndView createUserForm() {
-        return new ModelAndView("create","userDto",new UserDto());
+        return new ModelAndView("create", "userDto", new UserDto());
     }
 
     @PostMapping("/create")
     public ModelAndView createUser(@Valid @ModelAttribute UserDto userDto,
-                                   BindingResult bindingResult ) {
+                                   BindingResult bindingResult) {
         if (bindingResult.hasFieldErrors()) {
-            return new ModelAndView("create","userDto",userDto); //có lỗi --> trả thông tin obj + lỗi về form create
-        }else {
+            return new ModelAndView("create", "userDto", userDto); //có lỗi --> trả thông tin obj + lỗi về form create
+        } else {
             User user = new User();
-            BeanUtils.copyProperties(userDto,user); //copy userDto --> user
+            BeanUtils.copyProperties(userDto, user); //copy userDto --> user
             iUserService.createUser(user); //goi ham save
             //response --> client:
             ModelAndView mav = new ModelAndView("result");
-            mav.addObject("userDto",userDto);
+            mav.addObject("userDto", userDto);
 
             return mav;
         }
