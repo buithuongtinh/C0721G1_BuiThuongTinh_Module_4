@@ -120,7 +120,8 @@ public class EmployeeController {
     public String list(Model model,
                        @PageableDefault(value = 5) Pageable pageable,
                        @RequestParam (value = "name") String name) {
-        Page<Employee> employees = employeeService.findCustomerByCustomerName(name,pageable);
+//        Page<Employee> employees = employeeService.findCustomerByCustomerName(name,pageable);
+        Page<Employee> employees = this.employeeService.find(name,pageable);
         model.addAttribute("employees", employees);
         return "/employee/list";
     }

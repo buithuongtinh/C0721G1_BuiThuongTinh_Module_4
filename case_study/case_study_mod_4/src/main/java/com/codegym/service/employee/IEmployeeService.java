@@ -19,4 +19,6 @@ public interface IEmployeeService {
     Employee findById(int id);
 
     Page<Employee> findCustomerByCustomerName(String name, Pageable pageable);
+
+    Page<Employee> find(String search,Pageable pageable);
 }
