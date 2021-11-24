@@ -68,9 +68,11 @@
                            th:href="@{/employee/edit/__${employee.getEmployeeId()}__}">Edit</a>
                     </td>
                     <td>
-                        <button type="button" data-bs-toggle="modal"
-                                class="btn btn-danger" data-bs-target="#exampleModal"
-                                th:onclick="'deleteById('+${employee.getEmployeeId()}+')'">Delete
+                        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                th:data-parameter1="${employee.employeeId}"
+                                th:data-parameter2="${employee.employeeName}"
+                                onclick="showModal(this.getAttribute('data-parameter1'),this.getAttribute('data-parameter2'))">
+                            Delete
                         </button>
                     </td>
                 </tr>
@@ -117,27 +119,26 @@
                         aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                Do you want to delete ?
+                Do you want to delete <span id="nameCus" style="color: red"></span> ?
+                <span id="id"></span>
             </div>
-            <form method="get"  action="/employee/delete">
+            <form method="get" th:action="@{/employee/delete}">
                 <div class="modal-footer">
-                    <input type="hidden" name="id" id="employeeId">
-                    <input type="hidden" name="action" value="delete">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                         Close
                     </button>
                     <button type="submit" class="btn btn-danger">Yes</button>
+                    <input type="hidden" name="employeeId" id="employeeId" value="">
                 </div>
             </form>
         </div>
     </div>
 </div>
 <div th:replace="/layout/footer :: footer"></div>
-<script>
-    function deleteById(id) {
-        alert(id)
-        document.getElementById("employeeId").value = id;
-        // document.getElementById("employeeName").value = name;
+<script type="text/javascript">
+    function showModal(employeeId, name) {
+        document.getElementById("employeeId").value = employeeId;
+        document.getElementById("nameCus").innerText = name;
     }
 </script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

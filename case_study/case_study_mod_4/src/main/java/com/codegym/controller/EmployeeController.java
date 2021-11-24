@@ -99,17 +99,9 @@ public class EmployeeController {
         }
     }
 
-    @GetMapping("/delete1")
-    public String delete(@RequestParam("id") int id,
-                         RedirectAttributes redirectAttributes) {
-
-        this.employeeService.delete(id);
-        redirectAttributes.addFlashAttribute("msg", "Delete success");
-        return "redirect:/employee/list";
-    }
 
     @GetMapping("/delete")
-    public String xoa(@RequestParam("id") int id ,RedirectAttributes redirectAttributes){
+    public String xoa(@RequestParam("employeeId") int id ,RedirectAttributes redirectAttributes){
 
         this.employeeService.delete(id);
         redirectAttributes.addFlashAttribute("msg", "Delete success");
@@ -120,7 +112,6 @@ public class EmployeeController {
     public String list(Model model,
                        @PageableDefault(value = 5) Pageable pageable,
                        @RequestParam (value = "name") String name) {
-//        Page<Employee> employees = employeeService.findCustomerByCustomerName(name,pageable);
         Page<Employee> employees = this.employeeService.find(name,pageable);
         model.addAttribute("employees", employees);
         return "/employee/list";

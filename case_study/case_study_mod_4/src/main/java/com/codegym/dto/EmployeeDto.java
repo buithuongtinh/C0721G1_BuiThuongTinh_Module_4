@@ -18,6 +18,8 @@ public class EmployeeDto {
     @NotEmpty(message = "Birth day must not be empty")
     private String employeeBirthday;
     @NotEmpty(message = "Id card must not be empty")
+    @Pattern(regexp = "^(\\d{9}|\\d{10})$", message = "Incorrect, try again." +
+            "\n It can be 9 or 10 number")
     private String employeeIdCard;
     @Min(value = 1, message = "Salary must positive")
     private double employeeSalary;
